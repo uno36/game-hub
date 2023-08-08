@@ -5,6 +5,7 @@ import GenreList from "./components/GenreList";
 import { useState } from "react";
 import { GameQuery } from "./Hooks/Types";
 import PlatformSelector from "./components/PlatformSelector";
+import SortSelector from "./components/SortSelector";
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
@@ -32,6 +33,7 @@ function App() {
           <PlatformSelector
             selectedPlatform={gameQuery.platform} onSelectPlatform={(platform) => setGameQuery({...gameQuery, platform})}
           />
+          <SortSelector />
           <GameGrid
             gameQuery={gameQuery}            
           />
