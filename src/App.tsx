@@ -3,14 +3,14 @@ import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
 import { useState } from "react";
-import { GameQuery } from "./Hooks/Types";
+import { GameQuery } from "./Hooks/types";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
   return (
-    <Box width='100%'>
+    <Box width="100%">
       <Grid
         templateAreas={{ base: `"nav" "main"`, lg: `"nav nav""aside main"` }}
         templateColumns={{
@@ -19,7 +19,7 @@ function App() {
         }}
       >
         <GridItem area="nav">
-          <NavBar />
+          <NavBar onSearch={(searchText) => setGameQuery({...gameQuery, searchText}) }/>
         </GridItem>
         <Show above="lg">
           <GridItem area="aside" paddingX={5} marginY={5}>
