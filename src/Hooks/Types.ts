@@ -4,6 +4,11 @@ export interface Platform {
   slug: string;
 }
 
+ export interface GameQuery {
+  genre: Genre | null;
+  platform: Platform | null;
+}
+
 export interface Genre {
   id: number;
   name: string;
