@@ -12,9 +12,10 @@ import { Genre } from "../Hooks/Types";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
+  selectedGenre: Genre | null;
 }
 
-const GenreList = ({ onSelectGenre }: Props) => {
+const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
   const { data, isLoading, error } = UseGenres();
 
   if (error) return null;
@@ -35,6 +36,7 @@ const GenreList = ({ onSelectGenre }: Props) => {
               variant="link"
               fontSize="lg"
               paddingX={2}
+              fontWeight={genre.id === selectedGenre?.id ? 'bold' : "normal" }
               onClick={() => onSelectGenre(genre)}
             >
               {genre.name}
