@@ -7,6 +7,7 @@ export interface Platform {
  export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
+  sortOrder: string;
 }
 
 export interface Genre {
