@@ -1,19 +1,10 @@
 import {useState, useEffect} from 'react'
 import apiClient from '../services/api_client'
+import { Game, FetchGamesResponse } from './Types'
 
 
 const UseGames = () => {  
 
-interface Game {
-  id: number;
-  name: string;
-}
-
-interface FetchGamesResponse {
-  count: number;
-  results: Game [];
-
-}
 const [games, setGames] = useState<Game[]>([]);
 const [error, setError] = useState('');
 
