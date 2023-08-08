@@ -4,6 +4,11 @@ export interface Platform {
   slug: string;
 }
 
+export interface Genre {
+  id: number;
+  name: string;
+}
+
 export interface Game {
   id: number;
   name: string;
