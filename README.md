@@ -17,6 +17,11 @@ To get started with GameHub, follow these steps:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+LIVE IMAGE
+
+![game-hub](./src/assets/Game-hub.png)
+
+
 LIVE DEMO 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
