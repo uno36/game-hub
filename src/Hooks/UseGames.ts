@@ -1,4 +1,4 @@
-import { Game, GameQuery } from './types'
+import { Game, GameQuery } from './Types'
 import useData from './useData'
 
 
