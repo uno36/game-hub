@@ -60,7 +60,7 @@ const GameHeading = ({ gameQuery }: Props) => {
         <Button>
           <Link
             target="_blank"
-            href="https://github.com/uno36/game-hub.git"
+            href="https://www.loom.com/share/a362b9c1b7924bb18df54c45720b5476?sid=4668a4d1-0bb5-4444-865c-8a8b8ba8684b"
             isExternal
           >
             My Video
